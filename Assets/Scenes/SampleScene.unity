@@ -181,6 +181,8 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 4793261393722869554, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
     - {fileID: 5263036542936623585, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
+    - {fileID: 6614117586387543751, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
+    - {fileID: 2150002771538437536, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -821,8 +823,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6614117586387543751, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
