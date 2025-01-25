@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
     
     bool alive = true;
-
+    private Vector2 Location;
     private int lives = 3;
     // Gravity Scales
     public float light_gravityScale = 5f;
@@ -103,6 +103,10 @@ public class PlayerController : MonoBehaviour
         {
             GameEnd();
         }
+        else
+        {
+            rb.transform.position = Location;
+        }
     }
 
     private void GameoOver()
@@ -130,6 +134,12 @@ public class PlayerController : MonoBehaviour
             hover = true;
             isGrounded = true;
             rb.gravityScale = 0f;
+
+        }
+
+        if (collision.CompareTag("Waypoint"))
+        {
+            Location = rb.transform.position;
 
         }
     }

@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class GoalBubble : MonoBehaviour
 {
     private float savedGrav;
 
+    public string targetScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +59,12 @@ public class GoalBubble : MonoBehaviour
         }
     }
 
+
+
+    void LoadScene(string target)
+    {
+        SceneManager.LoadScene(target);
+    }
 //    private void OnTriggerExit2D(Collider2D other)
 //    {
 //        Rigidbody2D playerRb = other.GetComponent<Rigidbody2D>();

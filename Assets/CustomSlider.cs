@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FalseBubble : Bubble
+public class CustomSlider : MonoBehaviour
 {
-    public float falseTime = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,10 +14,5 @@ public class FalseBubble : Bubble
     void Update()
     {
         
-    }
-
-    void OnTriggerEnter2D()
-    {
-        StartCoroutine(Pop(falseTime));
     }
 }

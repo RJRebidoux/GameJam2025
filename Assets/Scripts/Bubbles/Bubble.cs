@@ -16,7 +16,7 @@ public class Bubble : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -33,15 +33,26 @@ public class Bubble : MonoBehaviour
 
                 
                 playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
-                Pop();
+                 StartCoroutine(Pop(bubbleTime));
             }
 
         }
     }
 
-    public void Pop()
+    
+    public IEnumerator Pop(float time)
     {
-        Destroy(gameObject, bubbleTime);
+        //if ()
+        {
+
+            yield return new WaitForSeconds(time);
+            gameObject.SetActive(false);
+
+
+
+
+        }
+
     }
 }
 
