@@ -7,7 +7,7 @@ TagManager:
   - Bubble
   - Ground
   - Goal
-
+  - PrimaryAudioSource
   layers:
   - Default
   - TransparentFX

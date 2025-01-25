@@ -14,10 +14,12 @@ public class SoundManager : MonoBehaviour
     private GameObject player;
 
 
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        soundSource = player.GetComponent<AudioSource>();
+        soundSource = GameObject.FindGameObjectWithTag("PrimaryAudioSource").GetComponent<AudioSource>();
+   
 
     }
 
@@ -32,7 +34,7 @@ public class SoundManager : MonoBehaviour
         if (bounceSounds.Length > 0)
         {
             int randomIndex = Random.Range(0, bounceSounds.Length);
-            soundSource.PlayOneShot(bounceSounds[randomIndex]);
+            soundSource.PlayOneShot(bounceSounds[randomIndex],0.5f);
 
         }
     }
@@ -45,6 +47,6 @@ public class SoundManager : MonoBehaviour
     }
     private void OnDestroy()
     {
-        soundSource.PlayOneShot(popSound);
+        soundSource.PlayOneShot(popSound, 0.5f);
     }
 }
