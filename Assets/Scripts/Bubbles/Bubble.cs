@@ -1,11 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Bubble : MonoBehaviour
-{
+{ public float bubbleTime = 20;
     public float bounceForce = 10f;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +33,15 @@ public class Bubble : MonoBehaviour
 
                 
                 playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
+                Pop();
             }
 
         }
+    }
+
+    public void Pop()
+    {
+        Destroy(gameObject, bubbleTime);
     }
 }
 

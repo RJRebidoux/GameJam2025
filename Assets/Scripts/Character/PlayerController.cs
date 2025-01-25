@@ -19,8 +19,8 @@ public class PlayerController : MonoBehaviour
 
     private int lives = 3;
     // Gravity Scales
-    public float light_gravityScale = 5f;
-    public float fallgravityScale = 10f;
+    float light_gravityScale = 5f;
+    float fallgravityScale = 10f;
 
 
     // Start is called before the first frame update
@@ -90,13 +90,6 @@ public class PlayerController : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Ground") || collision.CompareTag("Bubble"))
-        {
-            isGrounded = true;
-        }
-    }
 
     void GameEnd()
     {
@@ -123,5 +116,13 @@ public class PlayerController : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
         facingLeft = !facingLeft;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ground") || collision.CompareTag("Bubble"))
+        {
+            isGrounded = true;
+        }
     }
 }
