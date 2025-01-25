@@ -155,8 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 082280f9283191449ac750aa870c751b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceForce: 5
+  bounceForce: 10
   bubbleTime: 4
+  bigBounce: 20
   expandSize: 2
   expandSpeed: 2
 --- !u!58 &464458933
@@ -193,7 +194,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5821811
+  m_Radius: 0.500001
 --- !u!58 &464458934
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -557,7 +558,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5821811
+  m_Radius: 0.500001
 --- !u!1 &1376344998
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,7 +789,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5821811
+  m_Radius: 0.500001
 --- !u!58 &1642400383
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -903,7 +904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7a2eaca540483342a676a9d7be28487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceForce: 5
+  bounceForce: 10
   bombTime: 3
 --- !u!1 &1960496042
 GameObject:
@@ -937,10 +938,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d55a583d43e97f44acb25d4c299219c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 6
   facingLeft: 0
   jumpHeight: 20
   isGrounded: 1
+  light_gravityScale: 5
+  fallgravityScale: 5
 --- !u!212 &1960496044
 SpriteRenderer:
   m_ObjectHideFlags: 0
