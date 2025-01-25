@@ -28,7 +28,9 @@ public class BubbleGum : Bubble
     }
 
 
-    void OnTriggerStay2D(Collider2D other)
+  
+    //This Overrides the Trigger to fix the bounce
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
@@ -42,23 +44,18 @@ public class BubbleGum : Bubble
 
 
 
-              //if (!actived)
-              //{
-              //    actived = true;
-                    playerRb.AddForce(Vector2.up * bigBounce, ForceMode2D.Impulse);
-              // }
-              // else
-              //     playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
+                //if (!actived)
+                //{
+                //    actived = true;
+                playerRb.AddForce(Vector2.up * bigBounce, ForceMode2D.Impulse);
+                // }
+                // else
+                //     playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
 
                 Pop();
             }
 
         }
-    }
-    //This Overrides the Trigger to fix the bounce
-    void OnTriggerEnter2D(Collider2D other)
-    {
-
     }
 
 
