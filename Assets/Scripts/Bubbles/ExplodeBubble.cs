@@ -18,6 +18,11 @@ public class ExplodeBubble : Bubble
         
     }
 
+    void Pop()
+    {
+        Destroy(gameObject, bombTime);
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -33,7 +38,7 @@ public class ExplodeBubble : Bubble
 
                 playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
                 //BOOOM BOOOM
-                Destroy(gameObject,bombTime);
+                Pop();
             }
             
         }
