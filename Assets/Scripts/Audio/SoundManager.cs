@@ -5,27 +5,46 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     //sources
-    public AudioSource soundSource;
+    private AudioSource soundSource;
 
     //sfx
     public AudioClip[] bounceSounds;
     public AudioClip popSound;
 
-    //music
-    public AudioClip bgMusic;
+    private GameObject player;
 
-    //gameObjects
-    public GameObject player;
-    
+
     void Start()
     {
-        //soundSource = GetComponent<AudioSource>();
-        //player.GetComponent
-        
+        player = GameObject.FindGameObjectWithTag("Player");
+        soundSource = player.GetComponent<AudioSource>();
+
     }
 
     void Update()
     {
-        
+
+
+    }
+
+    public void PlayRandomBounceSound()
+    {
+        if (bounceSounds.Length > 0)
+        {
+            int randomIndex = Random.Range(0, bounceSounds.Length);
+            soundSource.PlayOneShot(bounceSounds[randomIndex]);
+
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            PlayRandomBounceSound();
+        }
+    }
+    private void OnDestroy()
+    {
+        soundSource.PlayOneShot(popSound);
     }
 }
