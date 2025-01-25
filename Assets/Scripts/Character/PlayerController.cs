@@ -16,8 +16,8 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
 
     // Gravity Scales
-    public float light_gravityScale = 5f;
-    public float fallgravityScale = 10f;
+    float light_gravityScale = 5f;
+    float fallgravityScale = 10f;
 
 
     // Start is called before the first frame update
@@ -74,17 +74,10 @@ public class PlayerController : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
 
-                isGrounded = false;
+                //isGrounded = false;
             }
         }
         if (Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0f) rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Ground") || collision.CompareTag("Bubble"))
-        {
-            isGrounded = true;
-        }
     }
 
     void Turn()
