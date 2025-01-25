@@ -74,10 +74,17 @@ public class PlayerController : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
 
-                //isGrounded = false;
+                isGrounded = false;
             }
         }
         if (Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0f) rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ground") || collision.CompareTag("Bubble"))
+        {
+            isGrounded = true;
+        }
     }
 
     void Turn()
