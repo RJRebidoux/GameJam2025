@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExplodeBubble : Bubble
+public class BubbleGum : Bubble
 {
-    public float bombTime = 3f;
-    //attempting to make child, idk what im doin
+    public float bubbleTime = 4;
+
+    public float expandRate = 2;
+    private bool actived = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,26 +34,11 @@ public class ExplodeBubble : Bubble
 
 
                 playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
-                //BOOOM BOOOM
-                Destroy(gameObject,bombTime);
+                if (actived == false)
+                
+                Destroy(gameObject, bubbleTime);
             }
-            
+
         }
     }
-    
-    }
-////   IEnumerator ExplodeTimer()
-////   {
-////       //if ()
-////       {
-////           
-////           yield return new WaitForSeconds(bombTime);
-////           
-////           
-////           
-////           
-////
-////       }
-////
-////   }
-
+}
