@@ -52,7 +52,7 @@ public class BubbleGum : Bubble
                 // else
                 //     playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
 
-                Pop();
+                StartCoroutine(Pop(bubbleTime));
             }
 
         }
