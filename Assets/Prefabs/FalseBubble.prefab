@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 2610161395607867344}
   m_Layer: 0
   m_Name: False Bubble
-  m_TagString: Bubble
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
