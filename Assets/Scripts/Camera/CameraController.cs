@@ -30,7 +30,8 @@ public class CameraController : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            transform.position = collision.transform.position;
+            //transform.position.x = collision.transform.position.x;
+            //transform.position.y = collision.transform.position.y;
         }
     }
 
