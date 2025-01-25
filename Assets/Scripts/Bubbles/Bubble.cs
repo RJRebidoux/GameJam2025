@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bubble : MonoBehaviour
 {
-    public float bounceForce = 1f;
+    public float bounceForce = 5f;
 
     // Start is called before the first frame update
     void Start()
