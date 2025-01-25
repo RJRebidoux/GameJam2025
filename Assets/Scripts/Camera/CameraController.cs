@@ -25,4 +25,14 @@ public class CameraController : MonoBehaviour
         Debug.Log("Target Position: " + targetPosition);
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.fixedDeltaTime);
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            //transform.position.x = collision.transform.position.x;
+            //transform.position.y = collision.transform.position.y;
+        }
+    }
+
 }
