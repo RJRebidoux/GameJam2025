@@ -132,5 +132,10 @@ public class PlayerController : MonoBehaviour
             rb.gravityScale = 0f;
 
         }
+
+        if (collision.CompareTag("Waypoint"))
+        {
+
+        }
     }
 }
