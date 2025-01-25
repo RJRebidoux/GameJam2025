@@ -4,13 +4,26 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //sources
+    public AudioSource soundSource;
+
+    //sfx
+    public AudioClip[] bounceSounds;
+    public AudioClip popSound;
+
+    //music
+    public AudioClip bgMusic;
+
+    //gameObjects
+    public GameObject player;
+    
     void Start()
     {
+        //soundSource = GetComponent<AudioSource>();
+        //player.GetComponent
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
