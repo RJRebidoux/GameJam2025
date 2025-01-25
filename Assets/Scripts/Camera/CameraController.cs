@@ -24,6 +24,12 @@ public class CameraController : MonoBehaviour
         Vector3 targetPosition = waypoints[currentIndex].position;
         Debug.Log("Target Position: " + targetPosition);
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.fixedDeltaTime);
+
+        if (Vector2.Distance(transform.position, targetPosition) < 0.01f)
+        {
+            // If the platform has reached the target position, switch to the next point
+            currentIndex = (currentIndex + 1) % waypoints.Length;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
