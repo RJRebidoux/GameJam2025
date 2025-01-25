@@ -14,7 +14,10 @@ public class PlayerController : MonoBehaviour
     bool doubleJump;
     public float jumpHeight = 20f;
     public bool isGrounded;
+    
+    bool alive = true;
 
+    private int lives = 3;
     // Gravity Scales
     public float light_gravityScale = 5f;
     public float fallgravityScale = 10f;
@@ -29,55 +32,63 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // ---- Movement ------ 
-        if (Input.GetKey(KeyCode.D))
-        { 
-            //if (!facingLeft) 
-                rb.velocity = new Vector2(speed, rb.velocity.y);
-            //else if (!facingLeft) rb.velocity = new Vector2(speed, rb.velocity.y);
-            if (facingLeft) Turn();
-
-        }
-        else if (Input.GetKey(KeyCode.A))
+        if (alive)
         {
-            //if (facingLeft) 
-                rb.velocity = new Vector2(-speed, rb.velocity.y);
-            //else if (facingLeft) rb.velocity = new Vector2(-speed, rb.velocity.y);
-            if (!facingLeft) Turn();
-        }
-        else
-        {
-            rb.velocity = new Vector2(0.0f, rb.velocity.y); // Note: Need to rework this so that the conveyor belt works better 
-        }
-
-        // ---- Gravity --------
-        if (rb.velocity.y < 0 && !isGrounded)
-        {
-            //state = MovementState.falling;
-            rb.gravityScale = fallgravityScale;
-        }
-        else
-        {
-            rb.gravityScale = light_gravityScale;
-
-        }
-        if (rb.velocity.y > 1.5f)
-        {
-            //state = MovementState.jumping;
-        }
-
-        // ------ Jumping --------
-        // The longer you hold down space, the higher you go
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (isGrounded)
+            // ---- Movement ------ 
+            if (Input.GetKey(KeyCode.D))
             {
-                rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+                //if (!facingLeft) 
+                rb.velocity = new Vector2(speed, rb.velocity.y);
+                //else if (!facingLeft) rb.velocity = new Vector2(speed, rb.velocity.y);
+                if (facingLeft) Turn();
 
-                isGrounded = false;
             }
+            else if (Input.GetKey(KeyCode.A))
+            {
+                //if (facingLeft) 
+                rb.velocity = new Vector2(-speed, rb.velocity.y);
+                //else if (facingLeft) rb.velocity = new Vector2(-speed, rb.velocity.y);
+                if (!facingLeft) Turn();
+            }
+            else
+            {
+                rb.velocity =
+                    new Vector2(0.0f,
+                        rb.velocity.y); // Note: Need to rework this so that the conveyor belt works better 
+            }
+
+            // ---- Gravity --------
+            if (rb.velocity.y < 0 && !isGrounded)
+            {
+                //state = MovementState.falling;
+                rb.gravityScale = fallgravityScale;
+            }
+            else
+            {
+                rb.gravityScale = light_gravityScale;
+
+            }
+
+            if (rb.velocity.y > 1.5f)
+            {
+                //state = MovementState.jumping;
+            }
+
+            // ------ Jumping --------
+            // The longer you hold down space, the higher you go
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (isGrounded)
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+
+                    isGrounded = false;
+                }
+            }
+
+            if (Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0f)
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
-        if (Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0f) rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -85,6 +96,24 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
         }
+    }
+
+    void GameEnd()
+    {
+
+    }
+    void LoseLife()
+    {
+        lives = lives - 1;
+        if (lives < 0)
+        {
+            GameEnd();
+        }
+    }
+
+    private void GameoOver()
+    {
+        throw new System.NotImplementedException();
     }
 
     void Turn()
