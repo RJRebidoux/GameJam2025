@@ -117,4 +117,12 @@ public class PlayerController : MonoBehaviour
         transform.localScale = scale;
         facingLeft = !facingLeft;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ground") || collision.CompareTag("Bubble"))
+        {
+            isGrounded = true;
+        }
+    }
 }
