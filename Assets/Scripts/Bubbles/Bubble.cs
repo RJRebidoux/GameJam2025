@@ -22,11 +22,11 @@ public class Bubble : MonoBehaviour
     {
         if (other.CompareTag("Player")) 
         {
-            Debug.Log("Player entered the bubble trigger!");
+            
             Rigidbody2D playerRb = other.GetComponent<Rigidbody2D>();
             if (playerRb != null)
             {
-                Debug.Log("Applying bounce force...");
+                
 
                 playerRb.velocity = new Vector2(playerRb.velocity.x, 0);
 
