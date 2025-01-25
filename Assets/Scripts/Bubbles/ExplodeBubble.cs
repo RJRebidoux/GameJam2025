@@ -18,10 +18,7 @@ public class ExplodeBubble : Bubble
         
     }
 
-    void Pop()
-    {
-        Destroy(gameObject, bombTime);
-    }
+
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -38,7 +35,7 @@ public class ExplodeBubble : Bubble
 
                 playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
                 //BOOOM BOOOM
-                Pop();
+                StartCoroutine(Pop(bombTime));
             }
             
         }

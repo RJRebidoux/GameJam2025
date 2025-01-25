@@ -19,6 +19,6 @@ public class FalseBubble : Bubble
 
     void OnTriggerEnter2D()
     {
-        Destroy(gameObject, falseTime);
+        StartCoroutine(Pop(falseTime));
     }
 }
