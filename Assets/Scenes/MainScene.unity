@@ -1064,6 +1064,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3735810935753785153, guid: 736bd95894e84554896623b87738a604, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3735810935753785153, guid: 736bd95894e84554896623b87738a604, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083576525390537986, guid: 736bd95894e84554896623b87738a604, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4332467292279864984, guid: 736bd95894e84554896623b87738a604, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1095,6 +1107,18 @@ PrefabInstance:
     - target: {fileID: 4334065507285420051, guid: 736bd95894e84554896623b87738a604, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4479679398680911611, guid: 736bd95894e84554896623b87738a604, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4479679398680911611, guid: 736bd95894e84554896623b87738a604, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4479679398680911611, guid: 736bd95894e84554896623b87738a604, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8785211667832937116, guid: 736bd95894e84554896623b87738a604, type: 3}
       propertyPath: m_AnchorMax.y
