@@ -124,5 +124,11 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
         }
+        if (collision.CompareTag("Goal"))
+        {
+            isGrounded = true;
+            rb.gravityScale = 0f;
+
+        }
     }
 }
