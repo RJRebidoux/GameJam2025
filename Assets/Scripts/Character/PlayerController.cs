@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     enum MovementState { idle, walking, jumping, falling}
 
     // Variables
+    bool hover = false;
     public float speed = 8f;
     public bool facingLeft;
     bool doubleJump;
@@ -32,7 +33,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (alive)
+        if (alive && !hover)
         {
             // ---- Movement ------ 
             if (Input.GetKey(KeyCode.D))
@@ -58,12 +59,12 @@ public class PlayerController : MonoBehaviour
             }
 
             // ---- Gravity --------
-            if (rb.velocity.y < 0 && !isGrounded)
+            if (rb.velocity.y < 0 && !isGrounded &&!hover)
             {
                 //state = MovementState.falling;
                 rb.gravityScale = fallgravityScale;
             }
-            else
+            else if(!hover)
             {
                 rb.gravityScale = light_gravityScale;
 
@@ -123,6 +124,13 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Ground") || collision.CompareTag("Bubble"))
         {
             isGrounded = true;
+        }
+        if (collision.CompareTag("Goal"))
+        {
+            hover = true;
+            isGrounded = true;
+            rb.gravityScale = 0f;
+
         }
     }
 }
