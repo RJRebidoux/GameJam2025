@@ -226,10 +226,9 @@ GameObject:
   - component: {fileID: 1376345001}
   - component: {fileID: 1376345000}
   - component: {fileID: 1376344999}
-  - component: {fileID: 1376345002}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Bubble
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -391,6 +390,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.4640853}
   m_EdgeRadius: 0
+
 --- !u!1 &1960496042
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,4 +810,5 @@ SceneRoots:
   - {fileID: 348228078934236939}
   - {fileID: 6898929467180773225}
   - {fileID: 1691134650301062717}
+
   - {fileID: 1376345001}
