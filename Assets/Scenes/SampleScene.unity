@@ -607,6 +607,8 @@ MonoBehaviour:
   facingLeft: 0
   jumpHeight: 20
   isGrounded: 1
+  light_gravityScale: 5
+  fallgravityScale: 5
 --- !u!212 &1960496044
 SpriteRenderer:
   m_ObjectHideFlags: 0

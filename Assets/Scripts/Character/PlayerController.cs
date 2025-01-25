@@ -19,8 +19,8 @@ public class PlayerController : MonoBehaviour
 
     private int lives = 3;
     // Gravity Scales
-    float light_gravityScale = 5f;
-    float fallgravityScale = 10f;
+    public float light_gravityScale = 5f;
+    public float fallgravityScale = 10f;
 
 
     // Start is called before the first frame update
