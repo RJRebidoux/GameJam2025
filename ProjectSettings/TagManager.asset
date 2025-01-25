@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Bubble
+  - Ground
+  - Goal
+
   layers:
   - Default
   - TransparentFX
