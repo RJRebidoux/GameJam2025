@@ -6,7 +6,7 @@ using UnityEngine;
 public class BubbleGum : Bubble
 {
     public float bubbleTime = 4;
-
+    public float bigBounce = 10;
     public float expandSize = 2;
     public float expandSpeed = 2;
     private bool actived = false;
@@ -41,12 +41,15 @@ public class BubbleGum : Bubble
                 playerRb.velocity = new Vector2(playerRb.velocity.x, 0);
 
 
-                playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
+
                 if (!actived)
                 {
                     actived = true;
+                    playerRb.AddForce(Vector2.up * bigBounce, ForceMode2D.Impulse);
                 }
-                
+                else 
+                    playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
+
                 Destroy(gameObject, bubbleTime);
             }
 
