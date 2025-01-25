@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
@@ -48,28 +49,28 @@ public class GoalBubble : MonoBehaviour
             savedGrav = playerRb.gravityScale;
 
             playerRb.transform.parent = transform;
-
+            playerRb.velocity = Vector2.zero;
             playerRb.gravityScale = 0f;
 
-
-
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        Rigidbody2D playerRb = other.GetComponent<Rigidbody2D>();
-        if (playerRb != null)
-        {
-
-
-            playerRb.transform.parent = null;
-
-
-            playerRb.gravityScale = savedGrav;
-
-
+            playerRb.transform.localPosition = Vector3.Lerp(playerRb.transform.localPosition, Vector3.zero, 1f);
 
         }
     }
+
+//    private void OnTriggerExit2D(Collider2D other)
+//    {
+//        Rigidbody2D playerRb = other.GetComponent<Rigidbody2D>();
+//        if (playerRb != null)
+//        {
+//
+//
+//            playerRb.transform.parent = null;
+//
+//
+//            playerRb.gravityScale = savedGrav;
+//
+//
+//
+//        }
+//    }
 }
