@@ -17,14 +17,14 @@ public class CameraController : MonoBehaviour
     {
         // Follow the player's y position
         Vector3 cameraPosition = transform.position;
-        cameraPosition.y = player.position.y + 2.5f; 
+        cameraPosition.y = player.position.y; 
         transform.position = cameraPosition;
 
         Vector3 targetPosition = waypoints[currentIndex].position;
         Debug.Log("Target Position: " + targetPosition);
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.fixedDeltaTime);
 
-        if (Vector2.Distance(transform.position, targetPosition) < 0.01f)
+        if (Vector2.Distance(transform.position, targetPosition) < 10)
         {
             // If the platform has reached the target position, switch to the next point
             currentIndex = (currentIndex + 1) % waypoints.Length;
