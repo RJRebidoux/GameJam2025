@@ -124,13 +124,14 @@ public class PlayerController : MonoBehaviour
         facingLeft = !facingLeft;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.CompareTag("Ground") || collision.CompareTag("Bubble"))
+        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Bubble"))
         {
             isGrounded = true;
         }
-        if (collision.CompareTag("Goal"))
+
+        if (collision.gameObject.CompareTag("Goal"))
         {
             hover = true;
             isGrounded = true;
@@ -138,7 +139,7 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if (collision.CompareTag("Waypoint"))
+        if (collision.gameObject.CompareTag("Waypoint"))
         {
             Location = rb.transform.position;
 
