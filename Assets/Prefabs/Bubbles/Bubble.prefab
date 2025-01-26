@@ -115,7 +115,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceSounds:
-  - {fileID: 8300000, guid: 4246150fc096a414a937ff5c0bbe2c68, type: 3}
+  - {fileID: 8300000, guid: 8ae40a89bbc93564e99b8c47b04a6df8, type: 3}
+  - {fileID: 8300000, guid: 1b21e3b7834c0c6458ba2887f8e996cf, type: 3}
+  - {fileID: 8300000, guid: 57879bdd8767dff478e1728280d8fd87, type: 3}
+  - {fileID: 8300000, guid: daf96af432cda904386d64318f40ae93, type: 3}
   popSound: {fileID: 8300000, guid: 0055be30520c03f4eb91c9c1d788217d, type: 3}
 --- !u!58 &5263036542936623585
 CircleCollider2D:
