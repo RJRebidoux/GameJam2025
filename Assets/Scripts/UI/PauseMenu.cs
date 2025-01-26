@@ -7,7 +7,6 @@ public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject camera;
-    [SerializeField] ;
 
     public void Pause()
     {
