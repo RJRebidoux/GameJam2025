@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     enum MovementState { idle, walking, jumping, falling}
 
+    
     // Variables
     bool hover = false;
     public float speed = 8f;
@@ -17,7 +19,7 @@ public class PlayerController : MonoBehaviour
     
     bool alive = true;
     private Vector2 Location;
-    private int lives = 3;
+    public int lives = 3;
 
     // Gravity Scales
     public float light_gravityScale = 5f;
@@ -82,6 +84,12 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0f)
                 rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
+
+        if (lives <= 0)
+        {
+            alive = false;
+            SceneManager.LoadScene("GameOver");
+        }
     }
 
     void GameEnd()
@@ -89,19 +97,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    public IEnumerator LoseLife()
-    {
-        lives = lives - 1;
-        if (lives < 0)
-        {
-            GameEnd();
-        }
-        else
-        {
-            yield return new WaitForSeconds(2f);
-            rb.transform.position = Location;
-        }
-    }
+    
 
     private void GameoOver()
     {
