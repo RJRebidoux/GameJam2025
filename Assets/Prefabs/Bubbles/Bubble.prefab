@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bubbleTime: 20
-  bounceForce: 10
+  bounceForce: 20
 --- !u!114 &8697222098373638275
 MonoBehaviour:
   m_ObjectHideFlags: 0
