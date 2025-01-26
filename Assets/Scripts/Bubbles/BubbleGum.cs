@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class BubbleGum : Bubble
 {
-    
     public float bigBounce = 10;
     public float expandSize = 2;
     public float expandSpeed = 2;
@@ -26,23 +25,16 @@ public class BubbleGum : Bubble
           transform.localScale = Vector2.Lerp(transform.localScale, desiredScale * expandSize, expandSpeed * Time.deltaTime);
       }
     }
-
-
   
     //This Overrides the Trigger to fix the bounce
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-
             Rigidbody2D playerRb = other.GetComponent<Rigidbody2D>();
             if (playerRb != null)
             {
-
-
                 playerRb.velocity = new Vector2(playerRb.velocity.x, 0);
-
-
 
                 if (!actived)
                 {
@@ -54,9 +46,6 @@ public class BubbleGum : Bubble
 
                 StartCoroutine(Pop(bubbleTime));
             }
-
         }
     }
-
-
 }

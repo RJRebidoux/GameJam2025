@@ -28,8 +28,6 @@ public class ExplodeBubble : Bubble
             Rigidbody2D playerRb = other.GetComponent<Rigidbody2D>();
             if (playerRb != null)
             {
-
-
                 playerRb.velocity = new Vector2(playerRb.velocity.x, 0);
 
 

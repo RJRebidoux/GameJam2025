@@ -5,17 +5,6 @@ using UnityEngine;
 public class FalseBubble : Bubble
 {
     public float falseTime = 0f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void OnTriggerEnter2D()
     {
