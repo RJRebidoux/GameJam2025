@@ -10,11 +10,18 @@ public class BubbleGum : Bubble
     public float expandSpeed = 2;
     private bool actived = false;
 
+    private Vector2 startingScale = new Vector2(0.5f, 0.5f);
     private Vector2 desiredScale;
     // Start is called before the first frame update
     void Start()
     {
         desiredScale = transform.localScale * expandSize;
+    }
+
+    void OnEnable()
+    {
+        actived = false;
+        transform.localScale = startingScale;
     }
 
     // Update is called once per frame
