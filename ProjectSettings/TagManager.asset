@@ -8,7 +8,6 @@ TagManager:
   - Ground
   - Goal
   - PrimaryAudioSource
-  - Waypoint
   layers:
   - Default
   - TransparentFX
