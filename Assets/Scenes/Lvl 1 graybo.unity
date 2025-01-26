@@ -174,6 +174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4793261393722869554, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1096,6 +1100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FalseBubble (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3954604660435373235, guid: 73fb5069c0750dc48abdb88730f95ea0, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     - target: {fileID: 7204816343512429689, guid: 73fb5069c0750dc48abdb88730f95ea0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.3399963
@@ -1299,6 +1307,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8115805110680607733, guid: 7143ac6b5ebc03f4a8d968515345c292, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3583,6 +3595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FalseBubble (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3954604660435373235, guid: 73fb5069c0750dc48abdb88730f95ea0, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     - target: {fileID: 7204816343512429689, guid: 73fb5069c0750dc48abdb88730f95ea0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.338058
@@ -3797,6 +3813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4793261393722869554, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3862,6 +3882,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4793261393722869554, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3937,6 +3961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble
       objectReference: {fileID: 0}
+    - target: {fileID: 4793261393722869554, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4090,6 +4118,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 352692639}
     m_Modifications:
+    - target: {fileID: 3300960385017366465, guid: 7fa560bb6f285f64cbd64f3b8d2003ea, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     - target: {fileID: 6582555159778960103, guid: 7fa560bb6f285f64cbd64f3b8d2003ea, type: 3}
       propertyPath: m_Name
       value: ExpodingBubble (2)
@@ -4266,6 +4298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FalseBubble (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3954604660435373235, guid: 73fb5069c0750dc48abdb88730f95ea0, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     - target: {fileID: 7204816343512429689, guid: 73fb5069c0750dc48abdb88730f95ea0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -33.202087
@@ -4512,6 +4548,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 352692639}
     m_Modifications:
+    - target: {fileID: 3300960385017366465, guid: 7fa560bb6f285f64cbd64f3b8d2003ea, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     - target: {fileID: 6582555159778960103, guid: 7fa560bb6f285f64cbd64f3b8d2003ea, type: 3}
       propertyPath: m_Name
       value: ExpodingBubble
@@ -5070,6 +5110,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8115805110680607733, guid: 7143ac6b5ebc03f4a8d968515345c292, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5694,6 +5738,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8115805110680607733, guid: 7143ac6b5ebc03f4a8d968515345c292, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5773,6 +5821,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8115805110680607733, guid: 7143ac6b5ebc03f4a8d968515345c292, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5852,6 +5904,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8115805110680607733, guid: 7143ac6b5ebc03f4a8d968515345c292, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5919,6 +5975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FalseBubble (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3954604660435373235, guid: 73fb5069c0750dc48abdb88730f95ea0, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     - target: {fileID: 7204816343512429689, guid: 73fb5069c0750dc48abdb88730f95ea0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.021957
@@ -6035,6 +6095,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 352692639}
     m_Modifications:
+    - target: {fileID: 3300960385017366465, guid: 7fa560bb6f285f64cbd64f3b8d2003ea, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     - target: {fileID: 6582555159778960103, guid: 7fa560bb6f285f64cbd64f3b8d2003ea, type: 3}
       propertyPath: m_Name
       value: ExpodingBubble
@@ -6149,6 +6213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4793261393722869554, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50614,6 +50682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble
       objectReference: {fileID: 0}
+    - target: {fileID: 4793261393722869554, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50693,6 +50765,10 @@ PrefabInstance:
       propertyPath: bubbleTime
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4793261393722869554, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50762,6 +50838,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8115805110680607733, guid: 7143ac6b5ebc03f4a8d968515345c292, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51174,6 +51254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FalseBubble (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3954604660435373235, guid: 73fb5069c0750dc48abdb88730f95ea0, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     - target: {fileID: 7204816343512429689, guid: 73fb5069c0750dc48abdb88730f95ea0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.54
@@ -51241,6 +51325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FalseBubble (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3954604660435373235, guid: 73fb5069c0750dc48abdb88730f95ea0, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     - target: {fileID: 7204816343512429689, guid: 73fb5069c0750dc48abdb88730f95ea0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.11107
@@ -51348,6 +51436,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble
       objectReference: {fileID: 0}
+    - target: {fileID: 4793261393722869554, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51524,6 +51616,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8115805110680607733, guid: 7143ac6b5ebc03f4a8d968515345c292, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51795,6 +51891,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4793261393722869554, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52279,6 +52379,10 @@ PrefabInstance:
       propertyPath: bubbleTime
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3954604660435373235, guid: 73fb5069c0750dc48abdb88730f95ea0, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     - target: {fileID: 7204816343512429689, guid: 73fb5069c0750dc48abdb88730f95ea0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -41.412094
@@ -52480,6 +52584,10 @@ PrefabInstance:
       propertyPath: bounceForce
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8115805110680607733, guid: 7143ac6b5ebc03f4a8d968515345c292, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52559,6 +52667,10 @@ PrefabInstance:
       propertyPath: bubbleTime
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4793261393722869554, guid: 97de11c0c904bbf4c8c9e87dd368ed22, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -52829,6 +52941,10 @@ PrefabInstance:
       propertyPath: bounceForce
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8115805110680607733, guid: 7143ac6b5ebc03f4a8d968515345c292, type: 3}
+      propertyPath: bubblespart
+      value: 
+      objectReference: {fileID: 1235888812021743679, guid: 1ecf9a97b1e68754297c45d1e62e38ca, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
