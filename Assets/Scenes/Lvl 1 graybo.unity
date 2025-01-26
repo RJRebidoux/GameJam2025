@@ -50611,6 +50611,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoalBubble
       objectReference: {fileID: 0}
+    - target: {fileID: 9208938080279328625, guid: 90bc25b77cc81fb4582e0e04b2e21f83, type: 3}
+      propertyPath: targetScene
+      value: GoalScene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
