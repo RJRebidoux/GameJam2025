@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,10 +27,13 @@ public class PlayerController : MonoBehaviour
     public float light_gravityScale = 5f;
     public float fallgravityScale = 10f;
 
+    public UnityEditor.Animations.AnimatorController animatorController;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        animatorController = GetComponent<UnityEditor.Animations.AnimatorController>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -42,6 +47,7 @@ public class PlayerController : MonoBehaviour
             {
                 rb.velocity = new Vector2(speed, rb.velocity.y);
                 if (facingLeft) Turn();
+            
             }
             else if (Input.GetKey(KeyCode.A))
             {
