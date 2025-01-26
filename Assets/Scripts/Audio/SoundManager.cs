@@ -13,6 +13,11 @@ public class SoundManager : MonoBehaviour
 
     private GameObject player;
 
+    private void OnDisable()
+    {
+        soundSource.PlayOneShot(popSound, 0.5f);
+
+    }
 
 
     void Start()
