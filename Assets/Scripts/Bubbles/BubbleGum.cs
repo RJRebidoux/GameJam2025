@@ -21,10 +21,10 @@ public class BubbleGum : Bubble
     // Update is called once per frame
     void Update()
     {
-      // if (actived)
-      // {
-      //     transform.localScale = Vector2.Lerp(transform.localScale, desiredScale * expandSize, expandSpeed * Time.deltaTime);
-      // }
+      if (actived)
+      {
+          transform.localScale = Vector2.Lerp(transform.localScale, desiredScale * expandSize, expandSpeed * Time.deltaTime);
+      }
     }
 
 
@@ -44,13 +44,13 @@ public class BubbleGum : Bubble
 
 
 
-                //if (!actived)
-                //{
-                //    actived = true;
+                if (!actived)
+                {
+                    actived = true;
                 playerRb.AddForce(Vector2.up * bigBounce, ForceMode2D.Impulse);
-                // }
-                // else
-                //     playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
+                }
+                else
+                    playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
 
                 StartCoroutine(Pop(bubbleTime));
             }
