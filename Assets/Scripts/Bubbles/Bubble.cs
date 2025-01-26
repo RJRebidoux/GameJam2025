@@ -3,12 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.ParticleSystemJobs;
 public class Bubble : MonoBehaviour
 { 
     public float bubbleTime = 20;
     public float bounceForce = 10f;
-
+    public ParticleSystem  bubblespart;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player")) 
@@ -29,8 +29,10 @@ public class Bubble : MonoBehaviour
     
     public IEnumerator Pop(float time)
     {
-        {
+        {   
             yield return new WaitForSeconds(time);
+            Instantiate(bubblespart);
+                
             gameObject.SetActive(false);
         }
     }
