@@ -11,7 +11,7 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
         pauseMenu.SetActive(true);
-        camera.SetActive(false);
+        camera.GetComponent<CameraController>().enabled = false;
         Time.timeScale = 0f;
 
 
@@ -20,7 +20,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenu.SetActive(false);
-        camera.SetActive(true);
+        camera.GetComponent<CameraController>().enabled = true;
         Time.timeScale = 1f;
     }
 }
