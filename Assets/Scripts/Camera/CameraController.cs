@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour
     private int currentIndex = 0;
     public bool moving = false;
 
-    void Update()
+    void FixedUpdate()
     {
         // Follow the player's y position
         Vector3 cameraPosition = transform.position;
