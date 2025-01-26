@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEngine.GraphicsBuffer;
 
 
 public class GoalBubble : MonoBehaviour
@@ -49,6 +50,8 @@ public class GoalBubble : MonoBehaviour
             playerRb.gravityScale = 0f;
 
             playerRb.transform.localPosition = Vector3.Lerp(playerRb.transform.localPosition, Vector3.zero, 1f);
+
+            SceneManager.LoadScene("GoalScene");
 
         }
     }
