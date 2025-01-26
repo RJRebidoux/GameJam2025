@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Bubble : MonoBehaviour
 { 
@@ -21,6 +22,7 @@ public class Bubble : MonoBehaviour
                 playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
                  StartCoroutine(Pop(bubbleTime));
             }
+            SceneManager.LoadScene("GoalScene");
         }
     }
 
