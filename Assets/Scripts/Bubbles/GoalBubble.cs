@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEditor.Experimental.GraphView.GraphView;
+
 
 public class GoalBubble : MonoBehaviour
 {
@@ -30,14 +29,9 @@ public class GoalBubble : MonoBehaviour
             Rigidbody2D playerRb = other.GetComponent<Rigidbody2D>();
             if (playerRb != null)
             {
-
-
                 playerRb.velocity = new Vector2(0, 0);
 
                 playerRb.gravityScale = 0f;
-
-
-
             }
 
         }
