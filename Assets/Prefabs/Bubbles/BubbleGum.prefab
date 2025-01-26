@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 875104029564663713}
   - component: {fileID: 3116946826542826384}
   - component: {fileID: 8115805110680607733}
+  - component: {fileID: 5794868600552486956}
   m_Layer: 0
   m_Name: BubbleGum
   m_TagString: Bubble
@@ -174,3 +175,18 @@ MonoBehaviour:
   bigBounce: 20
   expandSize: 2
   expandSpeed: 2
+  inflateSound: {fileID: 8300000, guid: bca9e4ba8b904da41849476f4f5e2a1c, type: 3}
+--- !u!114 &5794868600552486956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3872314782838844333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d147d25900bbfc843af56308b8c61a3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceSounds: []
+  popSound: {fileID: 8300000, guid: 0055be30520c03f4eb91c9c1d788217d, type: 3}

@@ -10,17 +10,24 @@ public class BubbleGum : Bubble
     public float expandSpeed = 2;
     private bool actived = false;
 
+    //sound blah
+    private AudioSource soundSource;
+    public AudioClip inflateSound;
+    private bool soundPlayed = false;
+
     private Vector2 startingScale = new Vector2(0.5f, 0.5f);
     private Vector2 desiredScale;
     // Start is called before the first frame update
     void Start()
     {
         desiredScale = transform.localScale * expandSize;
+        soundSource = GameObject.FindGameObjectWithTag("PrimaryAudioSource").GetComponent<AudioSource>();
     }
 
     void OnEnable()
     {
         actived = false;
+        soundPlayed = false;
         transform.localScale = startingScale;
     }
 
@@ -30,7 +37,12 @@ public class BubbleGum : Bubble
       if (actived)
       {
           transform.localScale = Vector2.Lerp(transform.localScale, desiredScale * expandSize, expandSpeed * Time.deltaTime);
-      }
+            if (!soundPlayed)
+            {
+                soundSource.PlayOneShot(inflateSound, 0.5f);
+                soundPlayed = true;
+            }
+        }
     }
   
     //This Overrides the Trigger to fix the bounce
