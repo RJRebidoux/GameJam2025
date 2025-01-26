@@ -27,13 +27,13 @@ public class PlayerController : MonoBehaviour
     public float light_gravityScale = 5f;
     public float fallgravityScale = 10f;
 
-    public UnityEditor.Animations.AnimatorController animatorController;
+    public Animator anim;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        animatorController = GetComponent<UnityEditor.Animations.AnimatorController>();
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -47,16 +47,19 @@ public class PlayerController : MonoBehaviour
             {
                 rb.velocity = new Vector2(speed, rb.velocity.y);
                 if (facingLeft) Turn();
+                anim.SetBool("isMoving", true);
             
             }
             else if (Input.GetKey(KeyCode.A))
             {
                 rb.velocity = new Vector2(-speed, rb.velocity.y);
                 if (!facingLeft) Turn();
+                anim.SetBool("isMoving", true);
             }
             else
             {
-                rb.velocity = new Vector2(0.0f, rb.velocity.y); 
+                rb.velocity = new Vector2(0.0f, rb.velocity.y);
+                anim.SetBool("isMoving", false);
             }
 
             // ---- Gravity --------
@@ -84,7 +87,9 @@ public class PlayerController : MonoBehaviour
                 {
                     rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
                     isGrounded = false;
+                    anim.SetBool("isJumping", true);
                 }
+                anim.SetBool("isJumping", true);
             }
 
             if (Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0f)
