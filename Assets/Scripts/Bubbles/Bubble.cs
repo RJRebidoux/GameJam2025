@@ -22,7 +22,7 @@ public class Bubble : MonoBehaviour
                 playerRb.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
                  StartCoroutine(Pop(bubbleTime));
             }
-            SceneManager.LoadScene("GoalScene");
+           
         }
     }
 

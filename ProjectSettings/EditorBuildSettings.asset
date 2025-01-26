@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PauseMenu.unity
     guid: b85effbf0b6a1dd46862ce2c52c88e48
+  - enabled: 1
+    path: Assets/Scenes/Lvl 1 graybo.unity
+    guid: 42145876d71bb2e4695b76cf6d05a81f
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 79d41ce6f41a0e842b91ac6475f93f27
   m_configObjects: {}

@@ -11,10 +11,11 @@ public class Health : MonoBehaviour
     public List<GameObject> health;
 
     // Floats
-    float CurrentHealth = 3.0f;
+    int CurrentHealth = 3;
 
     void Update()
     {
+        CurrentHealth = GetComponent<PlayerController>().lives;
         if (CurrentHealth == 2.0f)
         {
             health[1].SetActive(true);
@@ -33,12 +34,12 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void PlayerDamaged(float amount)
+    public void PlayerDamaged(int amount)
     {
         CurrentHealth -= amount;
     }
 
-    public void PlayerHeal(float amount)
+    public void PlayerHeal(int amount)
     {
         CurrentHealth += amount;
     }
