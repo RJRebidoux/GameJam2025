@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FalseBubble : Bubble
 {
-    public float falseTime = 1f;
+    public float falseTime = 0f;
     // Start is called before the first frame update
     void Start()
     {

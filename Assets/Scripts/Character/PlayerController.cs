@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
     {
 
     }
-    void LoseLife()
+    public IEnumerator LoseLife()
     {
         lives = lives - 1;
         if (lives < 0)
@@ -105,6 +105,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            yield return new WaitForSeconds(2f);
             rb.transform.position = Location;
         }
     }
