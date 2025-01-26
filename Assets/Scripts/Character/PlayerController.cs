@@ -12,13 +12,13 @@ public class PlayerController : MonoBehaviour
     bool hover = false;
     public float speed = 8f;
     public bool facingLeft;
-    bool doubleJump;
     public float jumpHeight = 20f;
     public bool isGrounded;
     
     bool alive = true;
     private Vector2 Location;
     private int lives = 3;
+
     // Gravity Scales
     public float light_gravityScale = 5f;
     public float fallgravityScale = 10f;
@@ -38,24 +38,17 @@ public class PlayerController : MonoBehaviour
             // ---- Movement ------ 
             if (Input.GetKey(KeyCode.D))
             {
-                //if (!facingLeft) 
                 rb.velocity = new Vector2(speed, rb.velocity.y);
-                //else if (!facingLeft) rb.velocity = new Vector2(speed, rb.velocity.y);
                 if (facingLeft) Turn();
-
             }
             else if (Input.GetKey(KeyCode.A))
             {
-                //if (facingLeft) 
                 rb.velocity = new Vector2(-speed, rb.velocity.y);
-                //else if (facingLeft) rb.velocity = new Vector2(-speed, rb.velocity.y);
                 if (!facingLeft) Turn();
             }
             else
             {
-                rb.velocity =
-                    new Vector2(0.0f,
-                        rb.velocity.y); // Note: Need to rework this so that the conveyor belt works better 
+                rb.velocity = new Vector2(0.0f, rb.velocity.y); 
             }
 
             // ---- Gravity --------
@@ -82,7 +75,6 @@ public class PlayerController : MonoBehaviour
                 if (isGrounded)
                 {
                     rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
-
                     isGrounded = false;
                 }
             }
@@ -96,6 +88,7 @@ public class PlayerController : MonoBehaviour
     {
 
     }
+
     public IEnumerator LoseLife()
     {
         lives = lives - 1;
@@ -136,13 +129,11 @@ public class PlayerController : MonoBehaviour
             hover = true;
             isGrounded = true;
             rb.gravityScale = 0f;
-
         }
 
         if (collision.gameObject.CompareTag("Waypoint"))
         {
             Location = rb.transform.position;
-
         }
     }
 }
