@@ -13,13 +13,6 @@ public class CameraController : MonoBehaviour
     private int currentIndex = 0;
     public bool moving = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         // Follow the player's y position
@@ -37,14 +30,4 @@ public class CameraController : MonoBehaviour
             currentIndex = (currentIndex + 1) % waypoints.Length;
         }
     }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            //transform.position.x = collision.transform.position.x;
-            //transform.position.y = collision.transform.position.y;
-        }
-    }
-
 }
